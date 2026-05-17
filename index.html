@@ -1,56 +1,94 @@
-<section class="section">
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride&Go Rental</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+    body{background:#0b0b0b;color:white}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1400');background-size:cover;background-position:center}
+    .container{max-width:1000px;margin:auto}
+    h1{font-size:64px;color:#ffd000;margin-bottom:18px}
+    h2{font-size:38px;margin-bottom:18px}
+    p{font-size:20px;line-height:1.6}
+    .btn{display:inline-block;margin-top:28px;padding:16px 34px;background:#ffd000;color:#000;text-decoration:none;font-weight:bold;border-radius:14px}
+    .section{padding:80px 20px;text-align:center}
+    .subtitle{max-width:850px;margin:0 auto 40px;color:#d0d0d0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:35px}
+    .card{background:#161616;border:1px solid #333;border-radius:22px;padding:32px}
+    .card h3{font-size:24px;margin-bottom:16px;color:#ffd000}
+    .tag{font-size:30px;font-weight:bold;color:white;margin-bottom:18px}
+    footer{text-align:center;padding:30px;background:#050505;color:#999}
+    @media(max-width:768px){h1{font-size:42px}h2{font-size:30px}p{font-size:18px}}
+  </style>
+</head>
+<body>
 
-  <h2>Soluzioni di noleggio</h2>
-
-  <p class="subtitle">
-    Stiamo definendo le formule più adatte per privati, lavoratori e rider.
-    Le tariffe saranno comunicate in base alla durata e alla disponibilità dei mezzi.
-  </p>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Noleggio giornaliero</h3>
-      <div class="price">Su richiesta</div>
-      <p>Ideale per spostamenti rapidi, commissioni e mobilità urbana.</p>
+  <section class="hero">
+    <div class="container">
+      <h1>Ride&Go Rental</h1>
+      <p>Noleggio scooter Honda SH125 a Marano di Napoli.<br>Soluzioni semplici per muoverti e lavorare.</p>
+      <a class="btn" href="https://wa.me/393517769766">Richiedi disponibilità</a>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Formula settimanale</h3>
-      <div class="price">Preventivo</div>
-      <p>Soluzione pensata per chi ha bisogno dello scooter per più giorni.</p>
+  <section class="section">
+    <div class="container">
+      <h2>Soluzioni di noleggio</h2>
+      <p class="subtitle">
+        Stiamo definendo le formule più adatte per privati, lavoratori e rider.
+        Le tariffe saranno comunicate in base alla durata e alla disponibilità dei mezzi.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Noleggio giornaliero</h3>
+          <div class="tag">Su richiesta</div>
+          <p>Ideale per spostamenti rapidi, commissioni e mobilità urbana.</p>
+        </div>
+
+        <div class="card">
+          <h3>Formula settimanale</h3>
+          <div class="tag">Preventivo</div>
+          <p>Soluzione pensata per chi ha bisogno dello scooter per più giorni.</p>
+        </div>
+
+        <div class="card">
+          <h3>Rider & lavoratori</h3>
+          <div class="tag">Agevolazioni</div>
+          <p>Formule dedicate per chi usa lo scooter per lavoro, consegne e spostamenti frequenti.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Rider & lavoratori</h3>
-      <div class="price">Agevolazioni</div>
-      <p>Formule dedicate per chi usa lo scooter per lavoro, consegne e spostamenti frequenti.</p>
+  <section class="section" style="background:#111;">
+    <div class="container">
+      <h2>Perché scegliere Ride&Go</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Scooter pratici</h3>
+          <p>Honda SH125 comodi, agili e adatti alla città.</p>
+        </div>
+
+        <div class="card">
+          <h3>Supporto diretto</h3>
+          <p>Contatto rapido tramite WhatsApp per disponibilità e informazioni.</p>
+        </div>
+
+        <div class="card">
+          <h3>Soluzioni flessibili</h3>
+          <p>Formule pensate sia per uso personale che lavorativo.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <footer>
+    Ride&Go Rental © 2026 · Marano di Napoli
+  </footer>
 
-</section>
-<section class="section">
-
-  <h2>Perché scegliere Ride&Go</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Scooter pratici</h3>
-      <p>Honda SH125, comodi e adatti alla città.</p>
-    </div>
-
-    <div class="card">
-      <h3>Supporto diretto</h3>
-      <p>Contatto rapido tramite WhatsApp per disponibilità e informazioni.</p>
-    </div>
-
-    <div class="card">
-      <h3>Soluzioni flessibili</h3>
-      <p>Formule pensate sia per uso personale che lavorativo.</p>
-    </div>
-
-  </div>
-
-</section>
+</body>
+</html>
