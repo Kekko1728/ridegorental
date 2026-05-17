@@ -1,0 +1,219 @@
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import { Phone, MessageCircle, MapPin, ShieldCheck, Clock, Bike, Star, CheckCircle2 } from 'lucide-react'
+import './style.css'
+
+function App() {
+  const whatsappUrl = 'https://wa.me/393517769766'
+
+  return (
+    <main className="site">
+      <nav className="nav">
+        <div className="nav-inner">
+          <a className="brand" href="#home">
+            Ride<span>&</span>Go
+          </a>
+
+          <div className="nav-links">
+            <a href="#flotta">Flotta</a>
+            <a href="#vantaggi">Perché noi</a>
+            <a href="#come-funziona">Come funziona</a>
+            <a href="#contatti">Contatti</a>
+          </div>
+
+          <a className="nav-cta" href={whatsappUrl}>
+            <MessageCircle size={18} />
+            WhatsApp
+          </a>
+        </div>
+      </nav>
+
+      <section id="home" className="hero">
+        <div className="hero-bg" />
+        <div className="container hero-grid">
+          <div className="hero-copy">
+            <div className="eyebrow">
+              <MapPin size={16} />
+              Noleggio scooter a Marano di Napoli
+            </div>
+
+            <h1>
+              Muoviti veloce.
+              <br />
+              <span>Senza stress.</span>
+            </h1>
+
+            <p>
+              Ride&Go Rental offre scooter pratici, affidabili e pronti per spostamenti quotidiani,
+              lavoro, commissioni e mobilità urbana.
+            </p>
+
+            <div className="hero-actions">
+              <a className="btn primary" href={whatsappUrl}>
+                Richiedi disponibilità
+              </a>
+              <a className="btn secondary" href="tel:+393517769766">
+                Chiama ora
+              </a>
+            </div>
+
+            <div className="trust-row">
+              <div><CheckCircle2 size={18} /> Prenotazione rapida</div>
+              <div><CheckCircle2 size={18} /> Supporto diretto</div>
+              <div><CheckCircle2 size={18} /> Flotta controllata</div>
+            </div>
+          </div>
+
+          <div className="hero-card">
+            <div className="card-top">
+              <div>
+                <p>Flotta iniziale</p>
+                <h2>Honda SH125</h2>
+              </div>
+              <div className="badge">125cc</div>
+            </div>
+
+            <div className="feature-list">
+              <div className="feature-item">
+                <Bike />
+                <div>
+                  <strong>Scooter agili</strong>
+                  <span>Perfetti per traffico, città e spostamenti quotidiani.</span>
+                </div>
+              </div>
+
+              <div className="feature-item">
+                <ShieldCheck />
+                <div>
+                  <strong>Sicurezza</strong>
+                  <span>Mezzi gestiti con attenzione e dotazioni essenziali.</span>
+                </div>
+              </div>
+
+              <div className="feature-item">
+                <Clock />
+                <div>
+                  <strong>Ritiro semplice</strong>
+                  <span>Contatto veloce e gestione pratica via WhatsApp.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flotta" className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="label">La flotta</p>
+              <h2>Scooter pensati per la città</h2>
+            </div>
+            <p>
+              Una soluzione pratica per chi vuole evitare traffico, parcheggio e tempi morti negli
+              spostamenti quotidiani.
+            </p>
+          </div>
+
+          <div className="cards">
+            <article className="info-card">
+              <Bike />
+              <h3>Honda SH125</h3>
+              <p>Agile, affidabile e comodo per muoversi in città con consumi contenuti.</p>
+            </article>
+
+            <article className="info-card">
+              <ShieldCheck />
+              <h3>Dotazioni utili</h3>
+              <p>Casco, antifurto e accessori essenziali per un utilizzo semplice e sicuro.</p>
+            </article>
+
+            <article className="info-card">
+              <MessageCircle />
+              <h3>Prenotazione veloce</h3>
+              <p>Scrivici su WhatsApp per disponibilità, informazioni e condizioni di noleggio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="vantaggi" className="light-section">
+        <div className="container split">
+          <div>
+            <p className="label dark">Perché Ride&Go</p>
+            <h2>Un noleggio semplice, veloce, locale.</h2>
+            <p>
+              L’obiettivo è offrire una soluzione pratica e diretta: meno complicazioni,
+              più mobilità e assistenza chiara.
+            </p>
+          </div>
+
+          <div className="benefits">
+            <div><Star /> Prenotazione rapida via WhatsApp</div>
+            <div><Star /> Posizione operativa a Marano di Napoli</div>
+            <div><Star /> Soluzioni per giornate e spostamenti urbani</div>
+            <div><Star /> Assistenza diretta e rapporto umano</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="come-funziona" className="section">
+        <div className="container">
+          <div className="section-head compact">
+            <p className="label">Come funziona</p>
+            <h2>Tre passaggi semplici</h2>
+          </div>
+
+          <div className="steps">
+            <div>
+              <span>01</span>
+              <h3>Contattaci</h3>
+              <p>Scrivici su WhatsApp o chiamaci per verificare disponibilità e condizioni.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Conferma</h3>
+              <p>Definiamo durata, documento, cauzione e modalità di ritiro.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Parti</h3>
+              <p>Ritiri lo scooter e inizi a muoverti in modo rapido e pratico.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" className="cta-section">
+        <div className="container">
+          <div className="cta-box">
+            <div>
+              <h2>Vuoi disponibilità e prezzi?</h2>
+              <p>Scrivici su WhatsApp o chiamaci. Ti rispondiamo in modo diretto e veloce.</p>
+            </div>
+
+            <div className="cta-actions">
+              <a className="btn dark" href={whatsappUrl}>
+                <MessageCircle size={19} />
+                Scrivi su WhatsApp
+              </a>
+              <a className="btn outline-dark" href="mailto:rideandgo.rental@gmail.com">
+                rideandgo.rental@gmail.com
+              </a>
+              <a className="phone-link" href="tel:+393517769766">
+                <Phone size={18} />
+                351 776 9766
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        Ride&Go Rental · Marano di Napoli · 351 776 9766
+      </footer>
+    </main>
+  )
+}
+
+createRoot(document.getElementById('root')).render(<App />)
